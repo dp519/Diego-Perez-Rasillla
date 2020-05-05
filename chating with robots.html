@@ -3,9 +3,34 @@
 <meta charsst="utf-8">
 <title>Chat With Dem Bots</title>
 <link rel="stylesheet" href="defaul.css">
+<link rel="shorcut icon" scr="favicon.png">
+<script type="module" src= "main.js"></script> 
 
+<header>
+    <h1>Chat with Robots! 🤖</h1>
+</header>
 
+<main>
+    <section id="messages" class="message-pane">
+        <template id="my-message">
+            <div name="message" class="from-me">Hello Robot</div>
+        </template>
+        <template id="their-message">
+            <div name="message" class="from-them">Hello Humon</div>
+        </template>
+    </section>
+    <section>
+        <textarea id="composition" class="composition-pane"></textarea>
+        <button id="send-button" class="composition-send">Send</button>
+    </section>
+</main>
 
-
+<nav>
+    <ul>
+        <li> AgreeBot
+        <li> GrumpyBot
+        <li> ReflectBot
+    </ul>
+</nav>
 
 </html>
