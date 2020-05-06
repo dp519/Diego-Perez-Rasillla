@@ -1,28 +1,27 @@
 const simpleBots = Object.create(null);
 
-
-const agreeOptions = [
-    "In life, winning and losing will both happen.",
-    "Talent is never enough",
-    "I always give 125% of me in the court"
+const MagicOptions = [
+    "You always need to give 125% of yourself in the court!",
+    "My Man!",
+    "Looking Good, but talent is never enough!"
 ];
 simpleBots.MagicBot = {
     "name": "MagicBot",
     "response": function () {
-        return agreeOptions[Math.floor(Math.random() * agreeOptions.length)];
+        return MagicOptions[Math.floor(Math.random() * MagicOptions.length)];
     }
 };
 
 simpleBots.ShaqBot = {
     "name": "ShaqBot",
-    "response": () => "Not in my house!"
+    "response": () => "No!"
 };
 
-simpleBots.MJBot = {
-    "name": "MJBot",
-    "response": function (History) {
-        return `Hmm,"${(history[history.length-1])}",? man!, gottabe like Mike`;
+simpleBots.MikeBot = {
+    "name": "Mike Bot",
+    "response": function (history) {
+        return `Hmm, "${history[history.length - 1]}"? Interesting.`;
     }
-}; 
+};
 
-export default Object.freeze(simpleBots)
+export default Object.freeze(simpleBots);

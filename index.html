@@ -1,13 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb">
-<meta charset = "utf-8">
-<title><br>Diego´s Page</br></title>
-<Body>
-  <h1><strong>Who is Diego?</strong></h1>
-  <a href="http://www.google.com">Search</a>
-  <h2>HTML Buttons</h2>
-  <p>buttons are defined with the button tag:</P>
+<meta charset="utf-8">
+<title>Title</title>
+<link rel="stylesheet" href="default.css">
+<link rel="shortcut icon" href="favicon.png">
+<script type="module" src="main.js"></script>
 
-  <button>Click Here</button>
-</Body>  
-</html>
+
+<header>
+    <h1>Chat with Robots! 🤖</h1>
+</header>
+
+<main>
+    <section id="messages" class="message-pane">
+        <template id="my-message">
+            <div name="message" class="from-me">Hello Robot</div>
+        </template>
+        <template id="their-message">
+            <div name="message" class="from-them">Hello Humon</div>
+        </template>
+    </section>
+    <section>
+        <textarea id="composition" class="composition-pane"></textarea>
+        <button id="send-button" class="composition-send">Send</button>
+    </section>
+</main>
+
+<nav>
+    <ul>
+        <li> MagicBot
+        <li> ShaqBot
+        <li> MikeBot
+    </ul>
+</nav>

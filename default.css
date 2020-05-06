@@ -1,0 +1,93 @@
+:root
+{
+    --banner-height: 80px;
+    --button-height: 80px;
+    --compose-height: 160px;
+    --message-padding: 1em;
+    --nav-width: 300px;
+}
+
+body
+{
+    background:#f1c40f;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14pt;
+    height: 100%;
+    margin: 0;
+    /* overflow: hidden; */
+    position: absolute;
+    width: 100%;
+}
+
+header
+{
+    background-color: #2ecc71;
+    height: var(--banner-height);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+main
+{
+    background-color: #e67e22;
+    height: calc(100% - var(--banner-height));
+    left: var(--nav-width);
+    position: absolute;
+    top: var(--banner-height);
+    width: calc(100% - var(--nav-width));
+}
+
+nav
+{
+    background-color: #08f;
+    height: calc(100% - var(--banner-height));
+    position: absolute;
+    top: var(--banner-height);
+    width: var(--nav-width);
+}
+
+.composition-send
+{
+    bottom: calc((var(--compose-height) - var(--button-height)) / 2 );
+    height: var(--button-height);
+    position: absolute;
+    right: 0;
+    width: var(--button-height);
+}
+
+.composition-pane
+{
+    box-sizing: border-box;
+    font-size: inherit;
+    height: var(--compose-height);
+    padding: var(--message-padding);
+    margin: 0;
+    border: 0;
+    width: calc(100% - var(--button-height));
+}
+
+.from-me,
+.from-them
+{
+    padding: var(--message-padding);
+}
+
+.from-me
+{
+    background: #0f8;
+    text-align: right;
+}
+
+.from-them
+{
+    background: #f80;
+    text-align: left;
+}
+
+.message-pane
+{
+    background-color: #2980b9;
+    height: calc(100% - var(--compose-height));
+    width: 100%;
+}
