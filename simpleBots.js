@@ -1,24 +1,24 @@
 const simpleBots = Object.create(null);
 
-const MagicOptions = [
-    "You always need to give 125% of yourself in the court!",
+const agreeOptions = [
+    "Yes!",
     "My Man!",
-    "Looking Good, but talent is never enough!"
+    "Looking Good!"
 ];
-simpleBots.MagicBot = {
-    "name": "MagicBot",
+simpleBots.agreeBot = {
+    "name": "AgreeBot",
     "response": function () {
-        return MagicOptions[Math.floor(Math.random() * MagicOptions.length)];
+        return agreeOptions[Math.floor(Math.random() * agreeOptions.length)];
     }
 };
 
-simpleBots.ShaqBot = {
-    "name": "ShaqBot",
+simpleBots.grumpyBot = {
+    "name": "GrumpyBot",
     "response": () => "No!"
 };
 
-simpleBots.MikeBot = {
-    "name": "Mike Bot",
+simpleBots.reflectBot = {
+    "name": "Reflect Bot",
     "response": function (history) {
         return `Hmm, "${history[history.length - 1]}"? Interesting.`;
     }

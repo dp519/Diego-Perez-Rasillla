@@ -9,7 +9,7 @@
 
 body
 {
-    background:#f1c40f;
+    background: #f80;
     font-family: "Fira Sans", sans-serif;
     font-size: 14pt;
     height: 100%;
@@ -21,7 +21,7 @@ body
 
 header
 {
-    background-color: #2ecc71;
+    background-color: #8f0;
     height: var(--banner-height);
     position: absolute;
     text-align: center;
@@ -30,7 +30,7 @@ header
 
 main
 {
-    background-color: #e67e22;
+    background-color: #80f;
     height: calc(100% - var(--banner-height));
     left: var(--nav-width);
     position: absolute;
@@ -87,7 +87,7 @@ nav
 
 .message-pane
 {
-    background-color: #2980b9;
+    background-color: #f08;
     height: calc(100% - var(--compose-height));
     width: 100%;
 }
